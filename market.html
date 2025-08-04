@@ -12,19 +12,26 @@
         <div class="left-space">
           <div class="search-container">
             <button id="search-btn" class="search">
-              <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" class="img-search" />
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/622/622669.png"
+                class="img-search"
+              />
             </button>
-            <input type="text" id="search-input" class="search-field" placeholder="Пошук..." />
+            <input
+              type="text"
+              id="search-input"
+              class="search-field"
+              placeholder="Пошук..."
+            />
           </div>
         </div>
-      
+
         <img src="logo.png" class="logo" />
-      
+
         <div class="right-space">
           <button id="menu-btn" class="menu-btn">☰</button>
         </div>
       </div>
-      
 
       <nav id="menu" class="menu">
         <a href="main.html">Головна</a>
@@ -32,162 +39,33 @@
         <a href="cart.html">Корзина</a>
       </nav>
     </header>
-    <h2 class="store-title">Оцінення поставщика по 5-ти зірковій системі</h2>
-
     <div class="game-grid">
+
+      <button id="add-game-btn" class="add-game-btn">＋</button>
+
       
-      <div class="game-card" onclick="location.href='details.html'">
-        <div class="game-cover">
-          <img src="minecraft.png" alt="Minecraft" />
-        </div>
-        <div class="game-info">
-          <p class="game-price">₴599</p>
-          <div class="game-rating">⭐️⭐️⭐️⭐️☆</div>
-          <button class="details-btn">Детальніше</button>
-        </div>
-      </div>
-      <div class="game-card" onclick="location.href='details.html'">
-        <div class="game-cover">
-          <img src="dst.png" alt="Dont strave together" />
-        </div>
-        <div class="game-info">
-          <p class="game-price">₴149</p>
-          <div class="game-rating">⭐️⭐️⭐️⭐️☆</div>
-          <button class="details-btn">Детальніше</button>
+      <div id="game-modal" class="modal hidden">
+        <div class="modal-content">
+          <h3>Додати нову гру</h3>
+          <input type="text" id="game-name" placeholder="Назва гри" />
+          <input
+            type="text"
+            id="game-image"
+            placeholder="Посилання на зображення"
+          />
+          <input type="number" id="game-price" placeholder="Ціна (₴)" />
+          <button id="create-game-btn">Створити</button>
+          <button id="close-modal-btn">Скасувати</button>
         </div>
       </div>
-      <div class="game-card" onclick="location.href='details.html'">
-        <div class="game-cover">
-          <img src="deadcells.jpg" alt="deadcells" />
-        </div>
-        <div class="game-info">
-          <p class="game-price">₴699</p>
-          <div class="game-rating">⭐️⭐️⭐️⭐️☆</div>
-          <button class="details-btn">Детальніше</button>
-        </div>
-      </div>
-      <div class="game-card" onclick="location.href='details.html'">
-        <div class="game-cover">
-          <img src="robloxbuy.webp" alt="Robux 40x" />
-        </div>
-        <div class="game-info">
-          <p class="game-price">₴49</p>
-          <div class="game-rating">⭐️⭐️⭐️⭐️☆</div>
-          <button class="details-btn">Детальніше</button>
-        </div>
-      </div>
-      <div class="game-card" onclick="location.href='details.html'">
-        <div class="game-cover">
-          <img src="minecraft.png" alt="Гра" />
-        </div>
-        <div class="game-info">
-          <p class="game-price">₴499</p>
-          <div class="game-rating">⭐️⭐️⭐️⭐️☆</div>
-          <button class="details-btn">Детальніше</button>
-        </div>
-      </div>
-      <div class="game-card" onclick="location.href='details.html'">
-        <div class="game-cover">
-          <img src="https://via.placeholder.com/160x200" alt="Гра" />
-        </div>
-        <div class="game-info">
-          <p class="game-price">₴599</p>
-          <div class="game-rating">⭐️⭐️⭐️⭐️☆</div>
-          <button class="details-btn">Детальніше</button>
-        </div>
-      </div>
-      <div class="game-card" onclick="location.href='details.html'">
-        <div class="game-cover">
-          <img src="https://via.placeholder.com/160x200" alt="Гра" />
-        </div>
-        <div class="game-info">
-          <p class="game-price">₴599</p>
-          <div class="game-rating">⭐️⭐️⭐️⭐️☆</div>
-          <button class="details-btn">Детальніше</button>
-        </div>
-      </div>
-      <div class="game-card" onclick="location.href='details.html'">
-        <div class="game-cover">
-          <img src="https://via.placeholder.com/160x200" alt="Гра" />
-        </div>
-        <div class="game-info">
-          <p class="game-price">₴599</p>
-          <div class="game-rating">⭐️⭐️⭐️⭐️☆</div>
-          <button class="details-btn">Детальніше</button>
-        </div>
-      </div>
-      <div class="game-card" onclick="location.href='details.html'">
-        <div class="game-cover">
-          <img src="robloxbuy.webp" alt="Robux 40x" />
-        </div>
-        <div class="game-info">
-          <p class="game-price">₴49</p>
-          <div class="game-rating">⭐️⭐️⭐️⭐️☆</div>
-          <button class="details-btn">Детальніше</button>
-        </div>
-      </div>
-      <div class="game-card" onclick="location.href='details.html'">
-        <div class="game-cover">
-          <img src="robloxbuy.webp" alt="Robux 40x" />
-        </div>
-        <div class="game-info">
-          <p class="game-price">₴49</p>
-          <div class="game-rating">⭐️⭐️⭐️⭐️☆</div>
-          <button class="details-btn">Детальніше</button>
-        </div>
-      </div>
-      <div class="game-card" onclick="location.href='details.html'">
-        <div class="game-cover">
-          <img src="minecraft.png" alt="Гра" />
-        </div>
-        <div class="game-info">
-          <p class="game-price">₴499</p>
-          <div class="game-rating">⭐️⭐️⭐️⭐️☆</div>
-          <button class="details-btn">Детальніше</button>
-        </div>
-      </div>
-      <div class="game-card" onclick="location.href='details.html'">
-        <div class="game-cover">
-          <img src="minecraft.png" alt="Гра" />
-        </div>
-        <div class="game-info">
-          <p class="game-price">₴499</p>
-          <div class="game-rating">⭐️⭐️⭐️⭐️☆</div>
-          <button class="details-btn">Детальніше</button>
-        </div>
-      </div>
-      <div class="game-card" onclick="location.href='details.html'">
-        <div class="game-cover">
-          <img src="dst.png" alt="Dont strave together" />
-        </div>
-        <div class="game-info">
-          <p class="game-price">₴149</p>
-          <div class="game-rating">⭐️⭐️⭐️⭐️☆</div>
-          <button class="details-btn">Детальніше</button>
-        </div>
-      </div>
-      <div class="game-card" onclick="location.href='details.html'">
-        <div class="game-cover">
-          <img src="dst.png" alt="Dont strave together" />
-        </div>
-        <div class="game-info">
-          <p class="game-price">₴149</p>
-          <div class="game-rating">⭐️⭐️⭐️⭐️☆</div>
-          <button class="details-btn">Детальніше</button>
-        </div>
-      </div>
-      
-      
-    
-      
     </div>
-    
+
     <div class="pagination">
       <button>&larr;</button>
       <span class="page-number">1</span>
       <button>&rarr;</button>
     </div>
-    
+
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-logo">
@@ -227,6 +105,6 @@
       </div>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="market.js"></script>
   </body>
 </html>

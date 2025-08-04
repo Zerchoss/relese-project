@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zerion</title>
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="cart.css" />
   </head>
   <body>
     <header class="main-head">
@@ -32,7 +32,43 @@
         <a href="cart.html">Корзина</a>
       </nav>
     </header>
-    <main>
+  
+      <main class="cart-container">
+  <h1 class="cart-title">🛒 Моя корзина</h1>
+
+  <div class="cart-items">
+    <!-- Один товар у корзині -->
+    <div class="cart-item">
+      <img src="teraria.jpg" alt="teraria" class="cart-img">
+      <div class="cart-info">
+        <h3>Terraria</h3>
+        <p>Ціна: 500₴</p>
+      </div>
+      <div class="cart-actions">
+        <input type="number" value="1" min="1">
+        <button class="remove-btn">✖</button>
+      </div>
+    </div>
+
+    <div class="cart-item">
+      <img src="deadcells.jpg" alt="Гра 2" class="cart-img">
+      <div class="cart-info">
+        <h3>Dead Cells</h3>
+        <p>Ціна: 650₴</p>
+      </div>
+      <div class="cart-actions">
+        <input type="number" value="1" min="1">
+        <button class="remove-btn">✖</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="cart-summary">
+    <p>Всього: <span class="total-price">1800₴</span></p>
+    <button class="checkout-btn">Оформити замовлення</button>
+  </div>
+
+
 
         
     </main>
@@ -75,6 +111,6 @@
       </div>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="cart.js"></script>
   </body>
 </html>
